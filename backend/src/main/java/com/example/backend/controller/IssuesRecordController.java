@@ -1,15 +1,18 @@
 package com.example.backend.controller;
 
-import com.example.backend.model.IssuesRecord;
-import com.example.backend.service.IssueRecordService;
 import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.backend.model.IssuesRecord;
+import com.example.backend.service.IssueRecordService;
 
 @RestController
 @RequestMapping("/api/issues")
